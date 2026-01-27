@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10x Dev Academy - Maîtrise l'IA, décuple ta productivité</title>
+    <meta name="description" content="Deviens un 10x Dev en maîtrisant l'IA. Formation 100% dans Claude Code sur les fondamentaux du software engineering.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        accent: '#f59e0b',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-dark text-gray-100">
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-primary rounded-full blur-[128px]"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-secondary rounded-full blur-[128px]"></div>
+        </div>
+
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-accent font-medium mb-4 tracking-wide uppercase">Formation 100% dans Claude Code</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    Deviens un <span class="gradient-text">10x Dev</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Maîtrise l'IA pour produire du code <strong class="text-white">maintenable</strong>, pas juste du code qui marche.
+                </p>
+                <p class="text-lg text-gray-400 mb-12 max-w-xl mx-auto italic">
+                    "Maîtrise l'IA, décuple ta productivité"
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#waitlist" class="bg-primary hover:bg-indigo-600 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+                        Rejoindre la waitlist
+                    </a>
+                    <a href="#problem" class="border border-gray-600 hover:border-gray-400 text-white font-medium py-4 px-8 rounded-lg transition-colors text-lg">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustained Velocity Section -->
+    <section class="py-24 bg-gradient-to-b from-dark to-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block mb-8">
+                    <span class="text-6xl">⚡</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Shipper vite, c'est bien.<br>
+                    <span class="text-gradient">Shipper durablement</span>, c'est rare.
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+                    N'importe qui peut shipper une feature rapidement.
+                    Le vrai défi ? Maintenir cette vélocité sprint après sprint.
+                </p>
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+                        <div class="text-red-500 text-2xl mb-3">📉</div>
+                        <h3 class="font-bold mb-2">Sans les fondamentaux</h3>
+                        <p class="text-gray-400 text-sm">Sprint 1: rapide. Sprint 3: ça frotte. Sprint 5: enlisement total.</p>
+                    </div>
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+                        <div class="text-yellow-500 text-2xl mb-3">🔄</div>
+                        <h3 class="font-bold mb-2">La dette s'accumule</h3>
+                        <p class="text-gray-400 text-sm">L'IA génère du code vite. Mais sans principes solides, elle génère aussi de la dette technique.</p>
+                    </div>
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+                        <div class="text-green-500 text-2xl mb-3">📈</div>
+                        <h3 class="font-bold mb-2">Avec les fondamentaux</h3>
+                        <p class="text-gray-400 text-sm">Vélocité constante. Code maintenable. Confiance à chaque déploiement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">
+                    Le code est devenu <span class="text-red-500">gratuit</span>.<br>
+                    Les erreurs aussi.
+                </h2>
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-2xl mx-auto">
+                    L'IA ne va pas prendre ton job. Mais un dev qui maîtrise l'IA va prendre le job de celui qui ne la maîtrise pas.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                        <div class="text-4xl mb-4">⚠️</div>
+                        <h3 class="text-xl font-bold mb-4 text-red-400">Le piège de la vitesse</h3>
+                        <p class="text-gray-400">
+                            L'IA génère du code en secondes. Mais sans supervision experte,
+                            ce code devient une <strong class="text-white">dette technique invisible</strong>
+                            qui explose dès le sprint suivant.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                        <div class="text-4xl mb-4">💡</div>
+                        <h3 class="text-xl font-bold mb-4 text-green-400">S'adapter, pas subir</h3>
+                        <p class="text-gray-400">
+                            Les <strong class="text-white">principes de software engineering</strong> existent
+                            depuis 30 ans. Ils sont plus importants que jamais pour
+                            <strong class="text-white">faire de l'IA ton meilleur outil</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Section -->
+    <section class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+                    Deux façons d'utiliser l'IA
+                </h2>
+                <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+                    L'outil est le même. La différence, c'est toi.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Before -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="text-red-500 text-2xl">😰</span>
+                            <h3 class="text-xl font-bold text-red-400">L'IA comme béquille</h3>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4 italic">Tu génères du code, tu croises les doigts, tu corriges après.</p>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-red-900/30">
+                            <p class="text-gray-400 text-sm">"L'IA m'a sorti 500 lignes, je sais pas trop ce que ça fait"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-red-900/30">
+                            <p class="text-gray-400 text-sm">"J'ai demandé une feature, elle a halluciné la moitié"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-red-900/30">
+                            <p class="text-gray-400 text-sm">"Ça marche en local... je merge et on verra"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-red-900/30">
+                            <p class="text-gray-400 text-sm">"Je passe plus de temps à débugger qu'à coder"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-red-900/30">
+                            <p class="text-gray-400 text-sm">"Sprint 1 rapide, sprint 5 on rame déjà"</p>
+                        </div>
+                    </div>
+
+                    <!-- After -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="text-green-500 text-2xl">😎</span>
+                            <h3 class="text-xl font-bold text-green-400">L'IA comme amplificateur</h3>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4 italic">Tu guides l'IA avec des principes solides, tu valides à chaque étape.</p>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-green-900/30">
+                            <p class="text-gray-300 text-sm">"Je découpe en petites étapes, l'IA suit sans halluciner"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-green-900/30">
+                            <p class="text-gray-300 text-sm">"Je valide chaque output : testable, découplé, lisible"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-green-900/30">
+                            <p class="text-gray-300 text-sm">"Les tests passent, je merge en confiance"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-green-900/30">
+                            <p class="text-gray-300 text-sm">"Un bug ? Logs + traces, je trouve en 30 secondes"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-green-900/30">
+                            <p class="text-gray-300 text-sm">"Sprint 10, même vélocité qu'au sprint 1"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-accent font-medium text-center mb-4 uppercase tracking-wide">La solution</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    Les <span class="gradient-text">Chroniques du Dev</span>
+                </h2>
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-2xl mx-auto">
+                    Une expérience narrative et immersive, directement dans Claude Code.
+                    Pas de vidéos. Pas de slides. Du vrai apprentissage par la pratique.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-3xl text-primary font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Diagnostic Gratuit</h3>
+                        <p class="text-gray-400">
+                            5-7 épisodes narratifs pour évaluer tes forces et faiblesses
+                            sur les principes fondamentaux.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-3xl text-secondary font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Profil Personnalisé</h3>
+                        <p class="text-gray-400">
+                            Découvre ton profil de 10x Dev avec tes points forts
+                            et tes axes d'amélioration.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-3xl text-accent font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Parcours Ciblé</h3>
+                        <p class="text-gray-400">
+                            Un plan d'apprentissage sur-mesure qui cible précisément
+                            tes lacunes détectées.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Who Section -->
+    <section class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16">Pour qui ?</h2>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4 bg-slate-800/30 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-green-500 text-2xl mt-1">✓</div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Tu utilises l'IA pour coder mais tu doutes parfois de la qualité</h3>
+                            <p class="text-gray-400">L'IA génère vite, mais tu ne sais pas toujours si c'est "bien" ou juste "ça marche".</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 bg-slate-800/30 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-green-500 text-2xl mt-1">✓</div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Tu veux progresser mais les ressources classiques ne t'inspirent plus</h3>
+                            <p class="text-gray-400">Tu en as marre des tutos vidéos et des cours théoriques. Tu veux apprendre en faisant.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 bg-slate-800/30 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-green-500 text-2xl mt-1">✓</div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Tu veux maîtriser les fondamentaux pour rester pertinent</h3>
+                            <p class="text-gray-400">Tu sais que l'IA change le métier. Tu veux être celui qui maîtrise l'outil, pas celui qui se fait remplacer.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 bg-slate-800/30 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-green-500 text-2xl mt-1">✓</div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Tu travailles déjà mais tu sens des lacunes sur l'architecture</h3>
+                            <p class="text-gray-400">Couplage, testabilité, observabilité... Ces mots te parlent mais tu n'es pas sûr de les maîtriser.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6 Competencies Section -->
+    <section class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-4">6 Familles de Compétences</h2>
+                <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+                    Chaque compétence est définie par son <strong class="text-white">résultat concret</strong>,
+                    pas par un pattern technique abstrait.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">🧪</div>
+                        <h3 class="text-lg font-bold mb-2 text-emerald-400">Testabilité</h3>
+                        <p class="text-sm text-gray-400 mb-4">"Valider sans douter"</p>
+                        <p class="text-gray-300 text-sm">
+                            <strong>Outcome:</strong> Écrire un test en moins de 2 minutes pour n'importe quelle logique.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">🔗</div>
+                        <h3 class="text-lg font-bold mb-2 text-blue-400">Couplage & Dépendances</h3>
+                        <p class="text-sm text-gray-400 mb-4">"Changer sans casser"</p>
+                        <p class="text-gray-300 text-sm">
+                            <strong>Outcome:</strong> Modifier un module sans impacter les autres.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">🏗️</div>
+                        <h3 class="text-lg font-bold mb-2 text-purple-400">Architecture & Structure</h3>
+                        <p class="text-sm text-gray-400 mb-4">"Structurer pour durer"</p>
+                        <p class="text-gray-300 text-sm">
+                            <strong>Outcome:</strong> Expliquer l'architecture en 2 minutes à un nouveau.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">🚀</div>
+                        <h3 class="text-lg font-bold mb-2 text-orange-400">Delivery & Feedback</h3>
+                        <p class="text-sm text-gray-400 mb-4">"Livrer en confiance"</p>
+                        <p class="text-gray-300 text-sm">
+                            <strong>Outcome:</strong> Savoir si ton code marche en moins de 30 secondes.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">🛡️</div>
+                        <h3 class="text-lg font-bold mb-2 text-red-400">Intégrité & Cohérence</h3>
+                        <p class="text-sm text-gray-400 mb-4">"Garantir la cohérence"</p>
+                        <p class="text-gray-300 text-sm">
+                            <strong>Outcome:</strong> Impossible d'avoir des données incohérentes.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">🔬</div>
+                        <h3 class="text-lg font-bold mb-2 text-cyan-400">Observabilité</h3>
+                        <p class="text-sm text-gray-400 mb-4">"Comprendre ce qui se passe"</p>
+                        <p class="text-gray-300 text-sm">
+                            <strong>Outcome:</strong> Retrouver n'importe quel événement en 30 secondes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16">Comment ça marche ?</h2>
+
+                <div class="space-y-8">
+                    <div class="flex gap-6 items-start">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-xl font-bold">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Lance la commande dans Claude Code</h3>
+                            <p class="text-gray-400 mb-4">
+                                Une simple commande et tu entres dans l'expérience.
+                                Pas d'installation, pas de configuration.
+                            </p>
+                            <div class="bg-slate-800 p-4 rounded-lg font-mono text-sm text-gray-300">
+                                npx dev10x start
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-xl font-bold">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Vis les Chroniques du Dev (gratuit)</h3>
+                            <p class="text-gray-400">
+                                Une aventure narrative interactive où tu fais face à des situations réelles.
+                                L'IA évalue tes réponses et construit ton profil en silence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start">
+                        <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-full flex items-center justify-center text-xl font-bold text-dark">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Découvre ton profil 10x Dev</h3>
+                            <p class="text-gray-400">
+                                À la fin du diagnostic, tu reçois ton profil complet avec tes forces,
+                                tes faiblesses, et un plan d'action personnalisé.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16">Questions fréquentes</h2>
+
+                <div class="space-y-6">
+                    <details class="bg-slate-800/50 rounded-xl border border-slate-700 p-6 group">
+                        <summary class="font-bold cursor-pointer flex justify-between items-center">
+                            C'est quoi un 10x Dev ?
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-gray-400 mt-4">
+                            Un 10x Dev est un développeur qui maîtrise l'IA comme amplificateur de talent.
+                            Il comprend les principes fondamentaux du software engineering pour guider l'IA
+                            vers du code de qualité et décupler sa productivité.
+                        </p>
+                    </details>
+
+                    <details class="bg-slate-800/50 rounded-xl border border-slate-700 p-6 group">
+                        <summary class="font-bold cursor-pointer flex justify-between items-center">
+                            Je dois savoir coder pour suivre la formation ?
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-gray-400 mt-4">
+                            Oui, une base en programmation est nécessaire. Mais tu n'as pas besoin
+                            d'être expert - la formation s'adapte à ton niveau actuel et cible
+                            précisément tes lacunes.
+                        </p>
+                    </details>
+
+                    <details class="bg-slate-800/50 rounded-xl border border-slate-700 p-6 group">
+                        <summary class="font-bold cursor-pointer flex justify-between items-center">
+                            Pourquoi "dans Claude Code" ?
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-gray-400 mt-4">
+                            Parce que c'est là que tu travailles ! L'apprentissage est intégré
+                            directement dans ton environnement de travail. Pas de changement de
+                            contexte, pas de vidéos passives. Tu apprends en faisant.
+                        </p>
+                    </details>
+
+                    <details class="bg-slate-800/50 rounded-xl border border-slate-700 p-6 group">
+                        <summary class="font-bold cursor-pointer flex justify-between items-center">
+                            Le diagnostic est vraiment gratuit ?
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-gray-400 mt-4">
+                            Oui ! Les "Chroniques du Dev" sont 100% gratuites. Tu reçois ton
+                            profil complet sans engagement. Le parcours d'apprentissage
+                            personnalisé est payant pour ceux qui veulent aller plus loin.
+                        </p>
+                    </details>
+
+                    <details class="bg-slate-800/50 rounded-xl border border-slate-700 p-6 group">
+                        <summary class="font-bold cursor-pointer flex justify-between items-center">
+                            Ça marche sur mobile ?
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <p class="text-gray-400 mt-4">
+                            Oui ! Grâce à Claude Code, tu peux suivre la formation depuis ton
+                            smartphone. Parfait pour les micro-sessions de 5-10 minutes.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section -->
+    <section id="waitlist" class="py-24 bg-dark relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary rounded-full blur-[128px]"></div>
+            <div class="absolute bottom-0 right-1/4 w-72 h-72 bg-secondary rounded-full blur-[128px]"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Rejoins la <span class="gradient-text">waitlist</span>
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Sois parmi les premiers à tester les Chroniques du Dev
+                    et à découvrir ton profil 10x Dev.
+                </p>
+
+                <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" action="#" method="POST">
+                    <input
+                        type="email"
+                        placeholder="ton@email.com"
+                        required
+                        class="flex-1 px-6 py-4 rounded-lg bg-slate-800 border border-slate-600 focus:border-primary focus:outline-none text-white placeholder-gray-400"
+                    >
+                    <button
+                        type="submit"
+                        class="bg-primary hover:bg-indigo-600 text-white font-bold py-4 px-8 rounded-lg transition-colors whitespace-nowrap"
+                    >
+                        Je m'inscris
+                    </button>
+                </form>
+
+                <p class="text-sm text-gray-500 mt-4">
+                    Pas de spam. Juste une notification quand ce sera prêt.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-gray-400 text-sm">
+                    © 2026 10x Dev Academy. Tous droits réservés.
+                </div>
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition-colors">Contact</a>
+                    <a href="#" class="hover:text-white transition-colors">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
