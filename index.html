@@ -306,69 +306,135 @@
         </div>
     </section>
 
-    <!-- 6 Competencies Section -->
+    <!-- The Real Problem Section -->
+    <section class="py-24 bg-gradient-to-b from-dark to-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-red-400 font-medium text-center mb-4 uppercase tracking-wide">Le vrai problème</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    Le "Vibe Coding" a un coût caché.
+                </h2>
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-2xl mx-auto">
+                    Les études terrain révèlent ce que personne ne dit : l'IA accélère la génération,
+                    pas la livraison. Et l'écart se paie cher.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-red-900/30 text-center">
+                        <div class="text-4xl font-bold text-red-400 mb-2">+39%</div>
+                        <p class="text-sm text-gray-400">d'écart entre vitesse perçue et vitesse réelle</p>
+                    </div>
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-red-900/30 text-center">
+                        <div class="text-4xl font-bold text-red-400 mb-2">×15</div>
+                        <p class="text-sm text-gray-400">de code dupliqué depuis l'adoption de l'IA</p>
+                    </div>
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-red-900/30 text-center">
+                        <div class="text-4xl font-bold text-red-400 mb-2">90%</div>
+                        <p class="text-sm text-gray-400">des projets meurent à 90% de complétion</p>
+                    </div>
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-red-900/30 text-center">
+                        <div class="text-4xl font-bold text-red-400 mb-2">62%</div>
+                        <p class="text-sm text-gray-400">des apps générées sans protection de base</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 max-w-3xl mx-auto">
+                    <blockquote class="text-lg text-gray-300 italic text-center mb-4">
+                        "Confidence drift describes the subtle shift that occurs when creation stops feeling predictable.
+                        The developer begins to hesitate before making small tweaks, remembering the last time a 'minor' change caused a catastrophic break."
+                    </blockquote>
+                    <p class="text-sm text-gray-500 text-center">— The Vibe Coding Paradox, 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7 Competencies Section -->
     <section class="py-24 bg-slate-900">
         <div class="container mx-auto px-6">
             <div class="max-w-5xl mx-auto">
-                <h2 class="text-4xl font-bold text-center mb-4">6 Familles de Compétences</h2>
+                <p class="text-green-400 font-medium text-center mb-4 uppercase tracking-wide">La solution</p>
+                <h2 class="text-4xl font-bold text-center mb-4">7 Familles de Compétences</h2>
                 <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
-                    Chaque compétence est définie par son <strong class="text-white">résultat concret</strong>,
-                    pas par un pattern technique abstrait.
+                    Chaque compétence cible un <strong class="text-white">problème documenté</strong> du vibe coding.
+                    Les chiffres viennent d'études terrain, pas de théorie.
                 </p>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
                         <div class="text-3xl mb-4">🧪</div>
                         <h3 class="text-lg font-bold mb-2 text-emerald-400">Testabilité</h3>
-                        <p class="text-sm text-white font-medium mb-3">Valider ce que l'IA génère, instantanément.</p>
+                        <p class="text-sm text-white font-medium mb-3">L'IA génère. Toi, tu valides.</p>
                         <p class="text-gray-400 text-sm">
-                            L'IA produit du code qui "a l'air de marcher". Un test t'évite de découvrir en prod que non.
+                            Le "Loop of Doom" : prompt → bug → fix → nouveau bug. Un test coupe ce cycle infernal.
                         </p>
                     </div>
 
                     <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
                         <div class="text-3xl mb-4">🔗</div>
                         <h3 class="text-lg font-bold mb-2 text-blue-400">Couplage & Dépendances</h3>
-                        <p class="text-sm text-white font-medium mb-3">Empêcher l'IA de créer des dépendances cachées.</p>
+                        <p class="text-sm text-white font-medium mb-3">×15 de code dupliqué depuis l'IA.</p>
                         <p class="text-gray-400 text-sm">
-                            Sans garde-fou, elle importe, instancie, couple. Tu te retrouves avec du spaghetti généré.
+                            211 millions de lignes analysées : la duplication explose. Shotgun surgery garanti.
                         </p>
                     </div>
 
                     <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
                         <div class="text-3xl mb-4">🏗️</div>
                         <h3 class="text-lg font-bold mb-2 text-purple-400">Architecture & Structure</h3>
-                        <p class="text-sm text-white font-medium mb-3">Guider l'IA pour qu'elle respecte ta structure.</p>
+                        <p class="text-sm text-white font-medium mb-3">90% fini. 100% bloqué.</p>
                         <p class="text-gray-400 text-sm">
-                            Sans conventions explicites, chaque prompt repart de zéro. Le code diverge, sprint après sprint.
+                            Les projets meurent à 90%. L'IA excelle sur le CRUD trivial, s'effondre sur la vraie logique métier.
                         </p>
                     </div>
 
                     <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
                         <div class="text-3xl mb-4">🚀</div>
                         <h3 class="text-lg font-bold mb-2 text-orange-400">Delivery & Feedback</h3>
-                        <p class="text-sm text-white font-medium mb-3">Détecter immédiatement quand l'IA casse ce qui marchait.</p>
+                        <p class="text-sm text-white font-medium mb-3">+19% plus lent. Tu crois aller vite.</p>
                         <p class="text-gray-400 text-sm">
-                            Elle corrige un truc, elle en casse un autre. Ton feedback loop doit être plus rapide qu'elle.
+                            METR 2025 : perception +20% / réalité -19%. Ton feedback loop doit rattraper cet écart.
                         </p>
                     </div>
 
                     <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
                         <div class="text-3xl mb-4">🛡️</div>
                         <h3 class="text-lg font-bold mb-2 text-red-400">Intégrité & Cohérence</h3>
-                        <p class="text-sm text-white font-medium mb-3">Protéger tes invariants métier des générations naïves.</p>
+                        <p class="text-sm text-white font-medium mb-3">L'IA ne connaît pas tes règles métier.</p>
                         <p class="text-gray-400 text-sm">
-                            L'IA ne sait pas qu'un panier vide ne peut pas être payé. Ton code doit l'interdire.
+                            Elle génère un checkout pour panier vide. Tes invariants doivent l'interdire explicitement.
                         </p>
                     </div>
 
                     <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
                         <div class="text-3xl mb-4">🔬</div>
                         <h3 class="text-lg font-bold mb-2 text-cyan-400">Observabilité</h3>
-                        <p class="text-sm text-white font-medium mb-3">Comprendre ce que l'IA a généré quand ça plante.</p>
+                        <p class="text-sm text-white font-medium mb-3">Débugger du code que tu n'as pas écrit.</p>
                         <p class="text-gray-400 text-sm">
-                            Pas de logs, pas de traces = débugger à l'aveugle du code que tu n'as pas écrit.
+                            La "Quiet Shame" : tu ne sais pas par où commencer. Logs + traces = ta seule chance de survie.
                         </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover md:col-start-2 lg:col-start-auto">
+                        <div class="text-3xl mb-4">🔐</div>
+                        <h3 class="text-lg font-bold mb-2 text-yellow-400">Sécurité & Frontières</h3>
+                        <p class="text-sm text-white font-medium mb-3">62% sans rate limiting. 100% vulnérable.</p>
+                        <p class="text-gray-400 text-sm">
+                            SQL injection, XSS, slopsquatting. L'IA copie les mauvais patterns du web sans filtrer.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="mt-12 pt-8 border-t border-slate-700">
+                    <p class="text-xs text-gray-500 text-center mb-4">Sources</p>
+                    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-gray-500">
+                        <a href="https://arxiv.org/html/2510.22254v2" target="_blank" class="hover:text-gray-300 transition-colors">METR 2025 Study</a>
+                        <a href="https://medium.com/@eran.swears/why-bigger-models-wont-code-better-7e8761ebeb16" target="_blank" class="hover:text-gray-300 transition-colors">211M Lines Analysis</a>
+                        <a href="https://news.ycombinator.com/item?id=46292365" target="_blank" class="hover:text-gray-300 transition-colors">Vibe Coding Fatigue (HN)</a>
+                        <a href="https://www.reddit.com/r/vibecoding/comments/1qiqpeh/projects_dont_fail_at_0_they_die_at_90/" target="_blank" class="hover:text-gray-300 transition-colors">90% Failure Pattern</a>
+                        <a href="https://www.legitsecurity.com/aspm-knowledge-base/vibe-coding-security" target="_blank" class="hover:text-gray-300 transition-colors">Security Vulnerabilities</a>
+                        <a href="https://futuristspeaker.com/technology-trends/the-vibe-coding-revolution/" target="_blank" class="hover:text-gray-300 transition-colors">62% Rate Limiting Study</a>
                     </div>
                 </div>
             </div>
