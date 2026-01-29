@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LP954PCJTM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LP954PCJTM');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Chronicles - Ship Sustainably with AI</title>
+    <meta name="description" content="Master software engineering fundamentals to ship sustainably with AI. 100% delivered within Claude Code.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        accent: '#f59e0b',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-dark text-gray-100">
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-primary rounded-full blur-[128px]"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-secondary rounded-full blur-[128px]"></div>
+        </div>
+
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-amber-400 font-medium mb-4 tracking-wide">AI accelerates generation. Not delivery.</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    <span class="gradient-text">Dev Chronicles</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto">
+                    AI generates code in seconds. Technical debt accumulates in silence.
+                </p>
+                <p class="text-lg text-gray-400 mb-12 max-w-xl mx-auto">
+                    Learn to <strong class="text-white">supervise AI</strong>, not suffer through it.
+                </p>
+
+                <p class="text-sm text-gray-500 mb-4">An adventure 100% within Claude Code</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#waitlist" class="bg-primary hover:bg-indigo-600 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+                        Join the waitlist
+                    </a>
+                    <a href="#problem" class="border border-gray-600 hover:border-gray-400 text-white font-medium py-4 px-8 rounded-lg transition-colors text-lg">
+                        See the data
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustained Velocity Section -->
+    <section class="py-24 bg-gradient-to-b from-dark to-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block mb-8">
+                    <span class="text-6xl">&#9889;</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Shipping fast is good.<br>
+                    <span class="text-gradient">Shipping sustainably</span> is rare.
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+                    Anyone can ship a feature quickly.
+                    The real challenge? Maintaining that velocity sprint after sprint.
+                </p>
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+                        <div class="text-red-500 text-2xl mb-3">&#128200;</div>
+                        <h3 class="font-bold mb-2">Without fundamentals</h3>
+                        <p class="text-gray-400 text-sm">Sprint 1: fast. Sprint 3: friction. Sprint 5: total gridlock.</p>
+                    </div>
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+                        <div class="text-yellow-500 text-2xl mb-3">&#128260;</div>
+                        <h3 class="font-bold mb-2">Debt accumulates</h3>
+                        <p class="text-gray-400 text-sm">AI generates code fast. But without solid principles, it also generates technical debt.</p>
+                    </div>
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+                        <div class="text-green-500 text-2xl mb-3">&#128200;</div>
+                        <h3 class="font-bold mb-2">With fundamentals</h3>
+                        <p class="text-gray-400 text-sm">Consistent velocity. Maintainable code. Confidence at every deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Real Problem Section -->
+    <section id="problem" class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-red-400 font-medium text-center mb-4 uppercase tracking-wide">The real problem</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    "Vibe Coding" has a hidden cost.
+                </h2>
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-2xl mx-auto">
+                    Field studies reveal what nobody's saying: AI accelerates generation,
+                    not delivery. And the gap costs you.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-red-900/30 text-center">
+                        <div class="text-4xl font-bold text-red-400 mb-2">+39%</div>
+                        <p class="text-sm text-gray-400">gap between perceived and actual speed</p>
+                    </div>
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-red-900/30 text-center">
+                        <div class="text-4xl font-bold text-red-400 mb-2">x15</div>
+                        <p class="text-sm text-gray-400">duplicated code since AI adoption</p>
+                    </div>
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-red-900/30 text-center">
+                        <div class="text-4xl font-bold text-red-400 mb-2">90%</div>
+                        <p class="text-sm text-gray-400">of projects die at 90% completion</p>
+                    </div>
+                    <div class="bg-slate-800/30 p-6 rounded-xl border border-red-900/30 text-center">
+                        <div class="text-4xl font-bold text-red-400 mb-2">62%</div>
+                        <p class="text-sm text-gray-400">of AI-generated apps lack basic protections</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700 max-w-3xl mx-auto">
+                    <blockquote class="text-lg text-gray-300 italic text-center mb-4">
+                        "Confidence drift describes the subtle shift that occurs when creation stops feeling predictable.
+                        The developer begins to hesitate before making small tweaks, remembering the last time a 'minor' change caused a catastrophic break."
+                    </blockquote>
+                    <p class="text-sm text-gray-500 text-center">- The Vibe Coding Paradox, 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adapt Section -->
+    <section class="py-24 bg-gradient-to-b from-slate-900 to-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">
+                    Code has become <span class="text-red-500">free</span>.<br>
+                    So have mistakes.
+                </h2>
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-2xl mx-auto">
+                    AI won't take your job. But a developer who masters AI will take the job of one who doesn't.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                        <div class="text-4xl mb-4">&#9888;&#65039;</div>
+                        <h3 class="text-xl font-bold mb-4 text-red-400">The speed trap</h3>
+                        <p class="text-gray-400">
+                            AI generates code in seconds. But without expert supervision,
+                            that code becomes <strong class="text-white">invisible technical debt</strong>
+                            that explodes in the next sprint.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                        <div class="text-4xl mb-4">&#128161;</div>
+                        <h3 class="text-xl font-bold mb-4 text-green-400">Adapt, don't suffer</h3>
+                        <p class="text-gray-400">
+                            <strong class="text-white">Software engineering principles</strong> have existed
+                            for 30 years. They're more important than ever for
+                            <strong class="text-white">making AI your best tool</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Section -->
+    <section class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+                    Two ways to use AI
+                </h2>
+                <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+                    Same tool. The difference is you.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Before -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="text-red-500 text-2xl">&#128552;</span>
+                            <h3 class="text-xl font-bold text-red-400">AI as a crutch</h3>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4 italic">You generate code, cross your fingers, fix it later.</p>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-red-900/30">
+                            <p class="text-gray-400 text-sm">"AI gave me 500 lines, I don't really know what it does"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-red-900/30">
+                            <p class="text-gray-400 text-sm">"I asked for a feature, it hallucinated half of it"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-red-900/30">
+                            <p class="text-gray-400 text-sm">"Works on my machine... merge and pray"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-red-900/30">
+                            <p class="text-gray-400 text-sm">"I spend more time debugging than coding"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-red-900/30">
+                            <p class="text-gray-400 text-sm">"Sprint 1 was fast, sprint 5 we're already struggling"</p>
+                        </div>
+                    </div>
+
+                    <!-- After -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="text-green-500 text-2xl">&#128526;</span>
+                            <h3 class="text-xl font-bold text-green-400">AI as an amplifier</h3>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4 italic">You guide AI with solid principles, validate at every step.</p>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-green-900/30">
+                            <p class="text-gray-300 text-sm">"I break tasks into small steps, AI follows without hallucinating"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-green-900/30">
+                            <p class="text-gray-300 text-sm">"I validate every output: testable, decoupled, readable"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-green-900/30">
+                            <p class="text-gray-300 text-sm">"Tests pass, I merge with confidence"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-green-900/30">
+                            <p class="text-gray-300 text-sm">"A bug? Logs + traces, I find it in 30 seconds"</p>
+                        </div>
+                        <div class="bg-slate-800/30 p-4 rounded-lg border border-green-900/30">
+                            <p class="text-gray-300 text-sm">"Sprint 10, same velocity as sprint 1"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-accent font-medium text-center mb-4 uppercase tracking-wide">The solution</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">Dev Chronicles</span>
+                </h2>
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-2xl mx-auto">
+                    A journey from generated code to <strong class="text-white">AI-augmented software engineering</strong>.
+                    You learn the fundamentals, then configure your AI to enforce them.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                    <div class="bg-slate-800/30 p-8 rounded-xl border border-slate-700">
+                        <div class="text-3xl mb-4">&#127919;</div>
+                        <h3 class="text-xl font-bold mb-4">Learn by doing</h3>
+                        <p class="text-gray-400">
+                            A narrative adventure where every decision matters.
+                            Face real situations, learn from mistakes, build lasting instincts.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/30 p-8 rounded-xl border border-slate-700">
+                        <div class="text-3xl mb-4">&#128736;&#65039;</div>
+                        <h3 class="text-xl font-bold mb-4">Configure your AI</h3>
+                        <p class="text-gray-400">
+                            Walk away with agents, skills, and plugins ready to use.
+                            Your AI applies the principles you learned, automatically.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7 Competencies Section -->
+    <section class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-4">7 Skill Families</h2>
+                <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+                    Software engineering fundamentals for the AI era.
+                    Each skill targets a <strong class="text-white">documented problem</strong>.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">&#129514;</div>
+                        <h3 class="text-lg font-bold mb-2 text-emerald-400">Testability</h3>
+                        <p class="text-sm text-white font-medium mb-3">AI generates. You validate.</p>
+                        <p class="text-gray-400 text-sm">
+                            The "Loop of Doom": prompt - bug - fix - new bug. A test breaks this cycle.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">&#128279;</div>
+                        <h3 class="text-lg font-bold mb-2 text-blue-400">Coupling & Dependencies</h3>
+                        <p class="text-sm text-white font-medium mb-3">x15 duplicated code since AI.</p>
+                        <p class="text-gray-400 text-sm">
+                            211 million lines analyzed: duplication is exploding. Shotgun surgery guaranteed.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">&#127959;&#65039;</div>
+                        <h3 class="text-lg font-bold mb-2 text-purple-400">Architecture & Structure</h3>
+                        <p class="text-sm text-white font-medium mb-3">90% done. 100% stuck.</p>
+                        <p class="text-gray-400 text-sm">
+                            Projects die at 90%. AI excels at trivial CRUD, collapses on real business logic.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">&#128640;</div>
+                        <h3 class="text-lg font-bold mb-2 text-orange-400">Delivery & Feedback</h3>
+                        <p class="text-sm text-white font-medium mb-3">You think you're fast but you're almost 20% slower.</p>
+                        <p class="text-gray-400 text-sm">
+                            According to METR 2025, you feel 20% faster with AI, but you're actually 20% slower.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">&#128737;&#65039;</div>
+                        <h3 class="text-lg font-bold mb-2 text-red-400">Integrity & Consistency</h3>
+                        <p class="text-sm text-white font-medium mb-3">AI doesn't know your business rules.</p>
+                        <p class="text-gray-400 text-sm">
+                            You know the subtleties of your business rules. AI shouldn't be able to break them with a single hallucination.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-3xl mb-4">&#128300;</div>
+                        <h3 class="text-lg font-bold mb-2 text-cyan-400">Observability</h3>
+                        <p class="text-sm text-white font-medium mb-3">Debugging code you didn't write.</p>
+                        <p class="text-gray-400 text-sm">
+                            The "Quiet Shame": you don't know where to start. Logs + traces = your only survival tool.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 card-hover md:col-start-2 lg:col-start-auto">
+                        <div class="text-3xl mb-4">&#128274;</div>
+                        <h3 class="text-lg font-bold mb-2 text-yellow-400">Security & Bad Practices</h3>
+                        <p class="text-sm text-white font-medium mb-3">62% without rate limiting. 100% vulnerable.</p>
+                        <p class="text-gray-400 text-sm">
+                            SQL injection, XSS, slopsquatting. AI copies bad patterns from the web without filtering.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sources -->
+                <div class="mt-12 pt-8 border-t border-slate-700">
+                    <p class="text-xs text-gray-500 text-center mb-4">Sources</p>
+                    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-gray-500">
+                        <a href="https://arxiv.org/html/2510.22254v2" target="_blank" class="hover:text-gray-300 transition-colors">METR 2025 Study</a>
+                        <a href="https://medium.com/@eran.swears/why-bigger-models-wont-code-better-7e8761ebeb16" target="_blank" class="hover:text-gray-300 transition-colors">211M Lines Analysis</a>
+                        <a href="https://news.ycombinator.com/item?id=46292365" target="_blank" class="hover:text-gray-300 transition-colors">Vibe Coding Fatigue (HN)</a>
+                        <a href="https://www.reddit.com/r/vibecoding/comments/1qiqpeh/projects_dont_fail_at_0_they_die_at_90/" target="_blank" class="hover:text-gray-300 transition-colors">90% Failure Pattern</a>
+                        <a href="https://www.legitsecurity.com/aspm-knowledge-base/vibe-coding-security" target="_blank" class="hover:text-gray-300 transition-colors">Security Vulnerabilities</a>
+                        <a href="https://futuristspeaker.com/technology-trends/the-vibe-coding-revolution/" target="_blank" class="hover:text-gray-300 transition-colors">62% Rate Limiting Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Who Section -->
+    <section class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16">Who is this for?</h2>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4 bg-slate-800/30 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-green-500 text-2xl mt-1">&#10003;</div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">You use AI to code but sometimes doubt the quality</h3>
+                            <p class="text-gray-400">AI generates fast, but you don't always know if it's "good" or just "it works".</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 bg-slate-800/30 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-green-500 text-2xl mt-1">&#10003;</div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">You want to improve but classic resources don't inspire you anymore</h3>
+                            <p class="text-gray-400">Tired of video tutorials and theoretical courses. You want to learn by doing.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 bg-slate-800/30 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-green-500 text-2xl mt-1">&#10003;</div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">You want to master the fundamentals to stay relevant</h3>
+                            <p class="text-gray-400">You know AI is changing the profession. You want to be the one who masters the tool, not the one who gets replaced.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 bg-slate-800/30 p-6 rounded-xl border border-slate-700 card-hover">
+                        <div class="text-green-500 text-2xl mt-1">&#10003;</div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">You're already working but feel gaps in your architecture knowledge</h3>
+                            <p class="text-gray-400">Coupling, testability, observability... These words sound familiar but you're not sure you've mastered them.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-accent font-medium mb-4 uppercase tracking-wide">Coming soon</p>
+                    <h2 class="text-4xl font-bold mb-6">An experience 100% within Claude Code</h2>
+                    <p class="text-xl text-gray-300">
+                        No videos. No external platform. You learn directly in your work environment.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                        <h3 class="font-bold text-white mb-4">How it works</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex gap-3">
+                                <span class="text-primary">&#9656;</span>
+                                <span class="text-gray-300"><strong class="text-white">Narrative missions</strong> - Face real situations. Your decisions have consequences.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-primary">&#9656;</span>
+                                <span class="text-gray-300"><strong class="text-white">Micro-learning</strong> - Short sessions (5-15 min) that fit into your daily workflow.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-primary">&#9656;</span>
+                                <span class="text-gray-300"><strong class="text-white">Fail forward</strong> - Made a mistake? AI explains why and guides you to the solution.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-primary">&#9656;</span>
+                                <span class="text-gray-300"><strong class="text-white">Personalized roadmap</strong> - A skill tree that adapts to you. What you've mastered, we skip. What's challenging, we dig in.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                        <h3 class="font-bold text-white mb-4">What you get</h3>
+                        <div class="space-y-4">
+                            <div class="flex gap-3">
+                                <span class="text-2xl">&#127891;</span>
+                                <div>
+                                    <h4 class="font-bold text-white">Built-in instincts</h4>
+                                    <p class="text-gray-400 text-sm">Ship faster, with code that lasts.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="text-2xl">&#129302;</span>
+                                <div>
+                                    <h4 class="font-bold text-white">A configured AI</h4>
+                                    <p class="text-gray-400 text-sm">Agents, skills, and plugins so it automatically enforces these principles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="#waitlist" class="inline-block bg-primary hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                        Notify me at launch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+
+                <div class="space-y-6">
+                    <details class="bg-slate-800/50 rounded-xl border border-slate-700 p-6 group">
+                        <summary class="font-bold cursor-pointer flex justify-between items-center">
+                            What is "Dev Chronicles"?
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">&#9660;</span>
+                        </summary>
+                        <p class="text-gray-400 mt-4">
+                            A narrative adventure inside Claude Code. You face real vibe coding situations
+                            and learn to avoid the traps before they cost you.
+                        </p>
+                    </details>
+
+                    <details class="bg-slate-800/50 rounded-xl border border-slate-700 p-6 group">
+                        <summary class="font-bold cursor-pointer flex justify-between items-center">
+                            What is "vibe coding"?
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">&#9660;</span>
+                        </summary>
+                        <p class="text-gray-400 mt-4">
+                            Coding by feel with AI, without structure or validation.
+                            It works... until it breaks.
+                        </p>
+                    </details>
+
+                    <details class="bg-slate-800/50 rounded-xl border border-slate-700 p-6 group">
+                        <summary class="font-bold cursor-pointer flex justify-between items-center">
+                            What skill level is this for?
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">&#9660;</span>
+                        </summary>
+                        <p class="text-gray-400 mt-4">
+                            You already code with AI but something feels off.
+                            Too much time debugging, code going in all directions. That's exactly what this is for.
+                        </p>
+                    </details>
+
+                    <details class="bg-slate-800/50 rounded-xl border border-slate-700 p-6 group">
+                        <summary class="font-bold cursor-pointer flex justify-between items-center">
+                            Why inside Claude Code?
+                            <span class="text-gray-400 group-open:rotate-180 transition-transform">&#9660;</span>
+                        </summary>
+                        <p class="text-gray-400 mt-4">
+                            Because that's where you work. And because you walk away with agents
+                            and skills configured to make your AI respect the principles you learned.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section -->
+    <section id="waitlist" class="py-24 bg-dark relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary rounded-full blur-[128px]"></div>
+            <div class="absolute bottom-0 right-1/4 w-72 h-72 bg-secondary rounded-full blur-[128px]"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Join the <span class="gradient-text">waitlist</span>
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Get notified at launch and start the adventure from day one.
+                </p>
+
+                <form id="waitlist-form" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" action="https://formspree.io/f/mgoyanbr" method="POST">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="your@email.com"
+                        required
+                        class="flex-1 px-6 py-4 rounded-lg bg-slate-800 border border-slate-600 focus:border-primary focus:outline-none text-white placeholder-gray-400"
+                    >
+                    <!-- Hidden fields for UTM tracking -->
+                    <input type="hidden" name="utm_source" id="utm_source">
+                    <input type="hidden" name="utm_campaign" id="utm_campaign">
+                    <input type="hidden" name="utm_content" id="utm_content">
+                    <input type="hidden" name="language" value="en">
+                    <input type="hidden" name="_subject" value="New Dev Chronicles waitlist signup">
+                    <button
+                        type="submit"
+                        class="bg-primary hover:bg-indigo-600 text-white font-bold py-4 px-8 rounded-lg transition-colors whitespace-nowrap"
+                    >
+                        Sign me up
+                    </button>
+                </form>
+
+                <!-- Success message (hidden by default) -->
+                <div id="success-message" class="hidden text-green-400 mt-4">
+                    Thank you! You'll be notified at launch.
+                </div>
+
+                <p id="spam-notice" class="text-sm text-gray-500 mt-4">
+                    No spam. Just a notification when it's ready.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-gray-400 text-sm">
+                    &copy; 2026 Dev Chronicles. All rights reserved.
+                </div>
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition-colors">Contact</a>
+                    <a href="#" class="hover:text-white transition-colors">Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UTM Tracking Script -->
+    <script>
+        // Capture UTM parameters on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+
+            // Populate hidden fields with UTM values
+            const utmSource = params.get('utm_source') || '';
+            const utmCampaign = params.get('utm_campaign') || '';
+            const utmContent = params.get('utm_content') || '';
+
+            document.getElementById('utm_source').value = utmSource;
+            document.getElementById('utm_campaign').value = utmCampaign;
+            document.getElementById('utm_content').value = utmContent;
+
+            // Store in localStorage for persistence across page navigation
+            if (utmContent) {
+                localStorage.setItem('utm_source', utmSource);
+                localStorage.setItem('utm_campaign', utmCampaign);
+                localStorage.setItem('utm_content', utmContent);
+            } else {
+                // Retrieve from localStorage if no UTM in URL
+                document.getElementById('utm_source').value = localStorage.getItem('utm_source') || '';
+                document.getElementById('utm_campaign').value = localStorage.getItem('utm_campaign') || '';
+                document.getElementById('utm_content').value = localStorage.getItem('utm_content') || '';
+            }
+        });
+
+        // Handle form submission with AJAX for better UX
+        document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+            const submitBtn = form.querySelector('button[type="submit"]');
+
+            // Disable button during submission
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Track conversion in Google Analytics
+                    const utmContent = formData.get('utm_content') || 'direct';
+                    gtag('event', 'waitlist_signup', {
+                        'event_category': 'conversion',
+                        'event_label': utmContent,
+                        'utm_source': formData.get('utm_source') || 'direct',
+                        'utm_campaign': formData.get('utm_campaign') || 'none',
+                        'utm_content': utmContent,
+                        'language': 'en'
+                    });
+
+                    // Show success message
+                    form.style.display = 'none';
+                    document.getElementById('success-message').classList.remove('hidden');
+                    document.getElementById('spam-notice').style.display = 'none';
+
+                    // Clear localStorage UTM after successful submission
+                    localStorage.removeItem('utm_source');
+                    localStorage.removeItem('utm_campaign');
+                    localStorage.removeItem('utm_content');
+                } else {
+                    throw new Error('Submission failed');
+                }
+            } catch (error) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Sign me up';
+                alert('An error occurred. Please try again.');
+            }
+        });
+    </script>
+
+</body>
+</html>
