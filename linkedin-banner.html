@@ -31,12 +31,12 @@
             overflow: hidden;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
+            padding-right: 200px;
         }
 
-        /* Safe zone with extra horizontal padding */
+        /* Safe zone - positioned to avoid profile photo overlap */
         .safe-zone {
-            width: 1100px;
             height: 220px;
             display: flex;
             flex-direction: row;
@@ -45,7 +45,6 @@
             gap: 60px;
             position: relative;
             z-index: 10;
-            padding: 0 80px;
         }
 
         /* Gradient orbs */
