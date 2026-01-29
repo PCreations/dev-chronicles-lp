@@ -31,8 +31,18 @@
             overflow: hidden;
             display: flex;
             align-items: center;
+            justify-content: center;
+        }
+
+        /* Safe zone: 1350 x 220 pixels centered */
+        .safe-zone {
+            width: 1350px;
+            height: 220px;
+            display: flex;
+            align-items: center;
             justify-content: space-between;
-            padding: 40px 80px;
+            position: relative;
+            z-index: 10;
         }
 
         /* Gradient orbs */
@@ -73,25 +83,23 @@
         }
 
         .content {
-            position: relative;
-            z-index: 10;
             display: flex;
             flex-direction: column;
-            gap: 16px;
-            max-width: 900px;
+            gap: 10px;
+            max-width: 800px;
         }
 
         .tagline {
             color: #f59e0b;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
             letter-spacing: 0.5px;
         }
 
         .title {
-            font-size: 56px;
+            font-size: 44px;
             font-weight: 800;
-            line-height: 1.2;
+            line-height: 1.15;
         }
 
         .title .gradient {
@@ -107,23 +115,23 @@
 
         .subtitle {
             color: #94a3b8;
-            font-size: 22px;
-            max-width: 600px;
-            line-height: 1.4;
+            font-size: 18px;
+            max-width: 550px;
+            line-height: 1.3;
         }
 
         .badge {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             background: rgba(99, 102, 241, 0.15);
             border: 1px solid rgba(99, 102, 241, 0.3);
-            padding: 8px 16px;
-            border-radius: 8px;
+            padding: 6px 12px;
+            border-radius: 6px;
             color: #a5b4fc;
-            font-size: 14px;
+            font-size: 13px;
             width: fit-content;
-            margin-top: 8px;
+            margin-top: 4px;
         }
 
         .badge-icon {
@@ -131,29 +139,27 @@
         }
 
         .visual {
-            position: relative;
-            z-index: 10;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 12px;
+            gap: 8px;
         }
 
         .code-block {
             background: rgba(15, 23, 42, 0.8);
             border: 1px solid rgba(99, 102, 241, 0.3);
-            border-radius: 12px;
-            padding: 20px 24px;
+            border-radius: 10px;
+            padding: 14px 18px;
             font-family: 'JetBrains Mono', 'Fira Code', monospace;
-            font-size: 14px;
+            font-size: 12px;
             color: #e2e8f0;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
         }
 
         .code-line {
             display: flex;
-            gap: 8px;
-            margin-bottom: 4px;
+            gap: 6px;
+            margin-bottom: 3px;
         }
 
         .code-line:last-child {
@@ -161,9 +167,8 @@
         }
 
         .code-prompt {
-            color: #ef4444;
+            color: #22c55e;
             font-weight: 700;
-            min-width: 60px;
         }
 
         .code-command {
@@ -199,45 +204,48 @@
         <div class="orb-2"></div>
         <div class="orb-3"></div>
 
-        <!-- Main content -->
-        <div class="content">
-            <div class="tagline">L'IA accélère la génération. Pas la livraison.</div>
-            <h1 class="title">
-                <span class="white">Les </span><span class="gradient">Chroniques du Dev</span>
-            </h1>
-            <p class="subtitle">
-                Apprends à superviser l'IA, pas à la subir.<br>
-                Shipper durablement avec Claude Code.
-            </p>
-            <div class="badge">
-                <span class="badge-icon">&#128073;</span>
-                <span>Lien dans mon profil</span>
+        <!-- Safe zone: 1350 x 220 pixels -->
+        <div class="safe-zone">
+            <!-- Main content -->
+            <div class="content">
+                <div class="tagline">L'IA accélère la génération. Pas la livraison.</div>
+                <h1 class="title">
+                    <span class="white">Les </span><span class="gradient">Chroniques du Dev</span>
+                </h1>
+                <p class="subtitle">
+                    Apprends à superviser l'IA, pas à la subir.<br>
+                    Shipper durablement avec Claude Code.
+                </p>
+                <div class="badge">
+                    <span class="badge-icon">&#128073;</span>
+                    <span>Lien dans mon profil</span>
+                </div>
             </div>
-        </div>
 
-        <!-- Visual element -->
-        <div class="visual">
-            <div class="code-block">
-                <div class="code-line">
-                    <span class="code-prompt">$</span>
-                    <span class="code-command">claude</span>
-                    <span class="code-flag">--orchestrate</span>
-                </div>
-                <div class="code-line">
-                    <span class="code-comment"># Structure avant génération</span>
-                </div>
-                <div class="code-line">
-                    <span class="code-comment"># Tests avant code</span>
-                </div>
-                <div class="code-line">
-                    <span class="code-comment"># Review avant merge</span>
+            <!-- Visual element -->
+            <div class="visual">
+                <div class="code-block">
+                    <div class="code-line">
+                        <span class="code-prompt">$</span>
+                        <span class="code-command">claude</span>
+                        <span class="code-flag">--orchestrate</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="code-comment"># Structure avant génération</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="code-comment"># Tests avant code</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="code-comment"># Review avant merge</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="instructions">
-        Dimensions: 1584 x 396 px | Fais un screenshot de la banniere ci-dessus
+        Dimensions: 1584 x 396 px | Safe zone: 1350 x 220 px | Fais un screenshot de la bannière
     </div>
 </body>
 </html>
